@@ -4,3 +4,5 @@
 <input type="checkbox" name="task" <%= if @task.completed then "checked" end %>>
 <label for="task"><%= @task.completed ? "This task is complete" : "This task is not complete" %></label>
 <br><%= link_to 'Menu', tasks_path %>
+
+<%= link_to 'Edit this task', task_edit_path %>
