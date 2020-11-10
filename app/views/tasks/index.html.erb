@@ -4,3 +4,5 @@
   <input type="checkbox" name="task" <%= (if task.completed then "checked" end) %> >
   <label for="task"><%= link_to task.name, task_id_path(task) %></label><br>
 <% end %>
+
+<%= link_to 'Create new task', tasks_new_path %>
